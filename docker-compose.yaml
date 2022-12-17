@@ -136,7 +136,7 @@ services:
       - ZBX_DEBUGLEVEL=1
       - ZBX_PROXYMODE=1 # 0 - active proxy and 1 - passive proxy.
       - ZBX_CONFIGFREQUENCY=3600
-  agent:
+  agent_proxy:
     image: zabbix/zabbix-agent:alpine-latest
     profiles:
       - proxy
